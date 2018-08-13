@@ -2,11 +2,17 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet/less" type="text/css" href="less/index.less" />
+	
 
-  <title>My Resume</title>
+  	<title>Henry Moland | Full Stack Developer</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  	<link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +20,154 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+	<!-- container wraps all the html markup in the body -->
+	<div class="container">
+		
+		<!-- header (Contains the nav, hero image and call to action) -->
+		<header> 
+			
+			<!-- logo -->
+				<div class="logo-box">
+					<img src="img/logo-white-home.png" alt="logo" class="logo">
+				</div>
+
+			<!-- navigation bar -->
+			<div class="nav-box">
+	
+				<!-- nav bar -->
+				<nav class="nav-bar">
+					<ul class="main-nav">
+						<li><a href="#skills">SKILLS</a></li>
+						<li><a href="#">PORTFOLIO</a></li>
+						<li><a href="#work">JOB HISTORY</a></li>
+						<li><a href="#contact">CONTACT ME</a></li>
+					</ul>	
+				</nav>
+				
+				
+			</div> <!-- end navigation bar -->
+	
+		</header>
+		
+		<!-- call to action -->
+		<div class="cta">
+  			<h1 class="name-text">Henry Moland</h1>
+			<p class="sub-text">I am a <strong>front-end web developer</strong> and <strong>UI/UX designer</strong> that create beautiful, scaleable web and mobile applications with modern web standards. My aspiration is to deliver pixel perfect, beautiful designs that meets the user needs, and I love what I do. </p>
+			
+			<!-- view my work button -->
+			<a href="#" class="btn btn-white btn-animated">Contact Me</a>
+		</div><!-- end hero-container -->
+		
+		<!-- skills section (contains the skills content) -->
+		<section class="skills-section" id="skills">
+		
+			<!-- UI/UX skills box-->
+			<div class="skills-box">
+				<ion-icon class="create-icon" name="create"></ion-icon>
+				<h2 class="skills-h2">UI/UX Designer</h2>
+					<p class="skills-p">I value creating clean content structure, clean designs and easy user experience</p>
+				
+				<h2 class="skills-sub-h2">What I design</h2>
+					<p class="things-text">UX, UI, Web, Mobile, Apps</p>
+				
+				<h2 class="skills-sub-h2">Design Tools</h2>
+					<ul class="skills-list">
+						<l1>Adobe XD</l1>
+						<li>Sketch</li>
+						<li>Photoshop</li>
+						<li>Webflow</li>
+						<li>Pen and Paper</li>
+						<li>Figma</li>
+					</ul>		 
+			</div>
+
+			<!-- Front-end skills box -->
+			<div class="skills-box">
+				<ion-icon class ="code-icon" name="code"></ion-icon>
+				<h2 class="skills-h2">Front-End Developer</h2>
+					<p class="skills-p">I love to code things from scratch and bring them to life in the browser</p>
+				
+				<h2 class="skills-sub-h2">Languages</h2>
+					<p class="things-text">HTML, CSS, Javascript, SASS, LESS</p>
+				
+				<h2 class="skills-sub-h2">Development Tools</h2>
+					<ul class="skills-list">
+						<li>VS Code</li>
+						<l1>React</l1>
+						<li>Angular</li>
+						<li>Bootstrap</li>
+						<li>Node.JS</li>
+					</ul>		 
+			</div>
+		</section><!-- end skills section
+		
+		<!-- work history (contains work history) -->
+		<section class="work-section" id="work">
+				<div class="work-container">
+					<div class="work-action-box">
+						<img src="img/adobe-logo1.png" alt="lyft-logo" class="lyft-logo">
+						<h1 class="work-heading">Adobe: Front End Dev.</h1>
+						<p class="work-text">Developed interactive JavaScript based user interfaces. Developed a web backend using a Python based web framework. Integrated with components and APIs created by other members of the team, or by a third-party. Maintained a suite of automated tests used for continuous integration.</p>
+					</div>
+					
+					<div class="work-action-box">
+						<img src="img/Lyft_logo.png" alt="lyft-logo" class="lyft-logo">
+						<h1 class="work-heading">Lyft: UI/UX Designer</h1>
+						<p class="work-text">Developed dynamic user interfaces and general information architecture through best practices, including sketches, mock-ups, wireframes, and prototypes. Participate in research, prototyping, experimentation, and design critique from abstract ideation to final implementation.</p>
+					</div>
+					
+					<div class="work-action-box">
+						<img src="img/stripe-logo_1.png" alt="lyft-logo" class="lyft-logo">
+						<h1 class="work-heading">Stripe: UI Developer</h1>
+						<p class="work-text">Provide front-end strategy and inspiration to development team. Led the development of rich web experiences that meet client objectives and driven measureable results across all platforms</p>
+					</div>	
+				</div><!-- end work-container -->
+		</section><!-- end work section -->
+
+		<!-- Contact Section -->
+		<section class="contact" id="contact">
+			<div class="contact-title">
+				<h1 class="contact-heading">Contact Me</h1>
+				<p class="contact-text">Have a question or want to work together?</p>	
+			</div>
+			
+			<div class="contact-form">
+				<form id'contact-form' menthod="post" action="">
+					<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+					<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+					
+					<textarea name="message" class="form-control" placeholder="Message"  rows="4"required ></textarea><br>
+					
+					<input type="submit" class="form-control submit" value="SEND MESSAGE">
+				
+				</form>
+			</div>
+		</section>
+		
+		<!-- footer -->
+	<footer class="footer">
+  		<p>Designed By Henry Moland &copy; 2018</p>
+	</footer><!-- end footer -->
+		
+</div><!-- end container -->	
+<script src="https://unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+<script>
+	$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+	});
+</script>
+
+	
 </body>
 </html>
